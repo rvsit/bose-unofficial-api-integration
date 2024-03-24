@@ -1,6 +1,6 @@
 {
-    "name": "Integration blueprint",
-    "filename": "integration_blueprint.zip",
+    "name": "Bose Unofficial API",
+    "filename": "bose_unofficial_api.zip",
     "hide_default_branch": true,
     "homeassistant": "2024.3.3",
     "render_readme": true,

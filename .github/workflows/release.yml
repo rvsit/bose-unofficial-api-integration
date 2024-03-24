@@ -21,16 +21,16 @@ jobs:
         shell: "bash"
         run: |
           yq -i -o json '.version="${{ github.event.release.tag_name }}"' \
-            "${{ github.workspace }}/custom_components/integration_blueprint/manifest.json"
+            "${{ github.workspace }}/custom_components/bose_unofficial_api/manifest.json"
 
       - name: "ZIP the integration directory"
         shell: "bash"
         run: |
-          cd "${{ github.workspace }}/custom_components/integration_blueprint"
-          zip integration_blueprint.zip -r ./
+          cd "${{ github.workspace }}/custom_components/bose_unofficial_api"
+          zip bose_unofficial_api.zip -r ./
 
       - name: "Upload the ZIP file to the release"
         # Pinning the version as this is not a trusted action (github's)
         uses: softprops/action-gh-release@v2.0.4
         with:
-          files: ${{ github.workspace }}/custom_components/integration_blueprint/integration_blueprint.zip
+          files: ${{ github.workspace }}/custom_components/bose_unofficial_api/bose_unofficial_api.zip

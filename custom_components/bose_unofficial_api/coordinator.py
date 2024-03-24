@@ -1,4 +1,4 @@
-"""DataUpdateCoordinator for integration_blueprint."""
+"""DataUpdateCoordinator for bose_unofficial_api."""
 from __future__ import annotations
 
 from datetime import timedelta

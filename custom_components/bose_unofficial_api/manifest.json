@@ -1,0 +1,12 @@
+{
+  "domain": "bose_unofficial_api",
+  "name": "Bose Unofficial API",
+  "codeowners": [
+    "@ludeeus"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/rvsit/bose-unofficial-api-integration",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/rvsit/bose-unofficial-api-integration/issues",
+  "version": "0.0.0"
+}
