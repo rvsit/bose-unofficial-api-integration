@@ -31,6 +31,6 @@ jobs:
 
       - name: "Upload the ZIP file to the release"
         # Pinning the version as this is not a trusted action (github's)
-        uses: softprops/action-gh-release@v2.0.4
+        uses: softprops/action-gh-release@v2.0.5
         with:
           files: ${{ github.workspace }}/custom_components/bose_unofficial_api/bose_unofficial_api.zip
